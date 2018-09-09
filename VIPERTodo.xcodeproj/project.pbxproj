@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		2267AFC22144F7FD00D8FED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFC12144F7FD00D8FED3 /* AppDelegate.swift */; };
-		2267AFC42144F7FD00D8FED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFC32144F7FD00D8FED3 /* ViewController.swift */; };
 		2267AFC72144F7FD00D8FED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2267AFC52144F7FD00D8FED3 /* Main.storyboard */; };
 		2267AFC92144F7FD00D8FED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2267AFC82144F7FD00D8FED3 /* Assets.xcassets */; };
 		2267AFCC2144F7FD00D8FED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2267AFCA2144F7FD00D8FED3 /* LaunchScreen.storyboard */; };
 		2267AFD72144F7FD00D8FED3 /* VIPERTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFD62144F7FD00D8FED3 /* VIPERTodoTests.swift */; };
 		2267AFE22144F7FD00D8FED3 /* VIPERTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFE12144F7FD00D8FED3 /* VIPERTodoUITests.swift */; };
+		2267AFF12144F85F00D8FED3 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFF02144F85F00D8FED3 /* TodoViewController.swift */; };
+		2267AFF52144F8FA00D8FED3 /* TodoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFF42144F8FA00D8FED3 /* TodoInteractor.swift */; };
+		2267AFFA2144F93600D8FED3 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFF92144F93600D8FED3 /* TodoPresenter.swift */; };
+		2267AFFD2144F94C00D8FED3 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFFC2144F94C00D8FED3 /* Todo.swift */; };
+		2267AFFF2144F95700D8FED3 /* TodoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267AFFE2144F95700D8FED3 /* TodoRouter.swift */; };
+		2267B0022144FA5A00D8FED3 /* TodoContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B0012144FA5A00D8FED3 /* TodoContract.swift */; };
+		2267B0052145D95F00D8FED3 /* TodoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B0042145D95F00D8FED3 /* TodoDetailRouter.swift */; };
+		2267B0072145D96D00D8FED3 /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B0062145D96D00D8FED3 /* TodoDetailViewController.swift */; };
+		2267B0092145DDCC00D8FED3 /* TodoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B0082145DDCC00D8FED3 /* TodoDetailPresenter.swift */; };
+		2267B00B2145DE8A00D8FED3 /* TodoDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B00A2145DE8A00D8FED3 /* TodoDetailContract.swift */; };
+		2267B00D2145DF6600D8FED3 /* TodoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B00C2145DF6600D8FED3 /* TodoDetailInteractor.swift */; };
+		2267B0102145E16D00D8FED3 /* TodoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267B00F2145E16D00D8FED3 /* TodoWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,6 @@
 /* Begin PBXFileReference section */
 		2267AFBE2144F7FD00D8FED3 /* VIPERTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267AFC12144F7FD00D8FED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2267AFC32144F7FD00D8FED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2267AFC62144F7FD00D8FED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2267AFC82144F7FD00D8FED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2267AFCB2144F7FD00D8FED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,18 @@
 		2267AFDD2144F7FD00D8FED3 /* VIPERTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267AFE12144F7FD00D8FED3 /* VIPERTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERTodoUITests.swift; sourceTree = "<group>"; };
 		2267AFE32144F7FD00D8FED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2267AFF02144F85F00D8FED3 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		2267AFF42144F8FA00D8FED3 /* TodoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInteractor.swift; sourceTree = "<group>"; };
+		2267AFF92144F93600D8FED3 /* TodoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
+		2267AFFC2144F94C00D8FED3 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		2267AFFE2144F95700D8FED3 /* TodoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRouter.swift; sourceTree = "<group>"; };
+		2267B0012144FA5A00D8FED3 /* TodoContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoContract.swift; sourceTree = "<group>"; };
+		2267B0042145D95F00D8FED3 /* TodoDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailRouter.swift; sourceTree = "<group>"; };
+		2267B0062145D96D00D8FED3 /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
+		2267B0082145DDCC00D8FED3 /* TodoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailPresenter.swift; sourceTree = "<group>"; };
+		2267B00A2145DE8A00D8FED3 /* TodoDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailContract.swift; sourceTree = "<group>"; };
+		2267B00C2145DF6600D8FED3 /* TodoDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailInteractor.swift; sourceTree = "<group>"; };
+		2267B00F2145E16D00D8FED3 /* TodoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +119,10 @@
 		2267AFC02144F7FD00D8FED3 /* VIPERTodo */ = {
 			isa = PBXGroup;
 			children = (
+				2267B00E2145E15600D8FED3 /* Worker */,
+				2267AFEF2144F81A00D8FED3 /* TODOModule */,
+				2267B0032145D94E00D8FED3 /* TODODetailModule */,
 				2267AFC12144F7FD00D8FED3 /* AppDelegate.swift */,
-				2267AFC32144F7FD00D8FED3 /* ViewController.swift */,
 				2267AFC52144F7FD00D8FED3 /* Main.storyboard */,
 				2267AFC82144F7FD00D8FED3 /* Assets.xcassets */,
 				2267AFCA2144F7FD00D8FED3 /* LaunchScreen.storyboard */,
@@ -123,6 +147,87 @@
 				2267AFE32144F7FD00D8FED3 /* Info.plist */,
 			);
 			path = VIPERTodoUITests;
+			sourceTree = "<group>";
+		};
+		2267AFEF2144F81A00D8FED3 /* TODOModule */ = {
+			isa = PBXGroup;
+			children = (
+				2267B0002144FA4D00D8FED3 /* protocols */,
+				2267AFF22144F8D200D8FED3 /* View */,
+				2267AFF32144F8D900D8FED3 /* Interactor */,
+				2267AFF62144F90400D8FED3 /* Presenter */,
+				2267AFF72144F91000D8FED3 /* Entity */,
+				2267AFF82144F92300D8FED3 /* Router */,
+			);
+			path = TODOModule;
+			sourceTree = "<group>";
+		};
+		2267AFF22144F8D200D8FED3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2267AFF02144F85F00D8FED3 /* TodoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2267AFF32144F8D900D8FED3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2267AFF42144F8FA00D8FED3 /* TodoInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2267AFF62144F90400D8FED3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2267AFF92144F93600D8FED3 /* TodoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2267AFF72144F91000D8FED3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2267AFFC2144F94C00D8FED3 /* Todo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2267AFF82144F92300D8FED3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2267AFFE2144F95700D8FED3 /* TodoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2267B0002144FA4D00D8FED3 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2267B0012144FA5A00D8FED3 /* TodoContract.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		2267B0032145D94E00D8FED3 /* TODODetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				2267B00A2145DE8A00D8FED3 /* TodoDetailContract.swift */,
+				2267B0042145D95F00D8FED3 /* TodoDetailRouter.swift */,
+				2267B0062145D96D00D8FED3 /* TodoDetailViewController.swift */,
+				2267B0082145DDCC00D8FED3 /* TodoDetailPresenter.swift */,
+				2267B00C2145DF6600D8FED3 /* TodoDetailInteractor.swift */,
+			);
+			path = TODODetailModule;
+			sourceTree = "<group>";
+		};
+		2267B00E2145E15600D8FED3 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				2267B00F2145E16D00D8FED3 /* TodoWorker.swift */,
+			);
+			path = Worker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +361,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2267AFC42144F7FD00D8FED3 /* ViewController.swift in Sources */,
+				2267B00B2145DE8A00D8FED3 /* TodoDetailContract.swift in Sources */,
+				2267B0022144FA5A00D8FED3 /* TodoContract.swift in Sources */,
+				2267B0092145DDCC00D8FED3 /* TodoDetailPresenter.swift in Sources */,
+				2267AFFF2144F95700D8FED3 /* TodoRouter.swift in Sources */,
+				2267AFF12144F85F00D8FED3 /* TodoViewController.swift in Sources */,
+				2267B00D2145DF6600D8FED3 /* TodoDetailInteractor.swift in Sources */,
+				2267B0052145D95F00D8FED3 /* TodoDetailRouter.swift in Sources */,
+				2267AFF52144F8FA00D8FED3 /* TodoInteractor.swift in Sources */,
+				2267B0102145E16D00D8FED3 /* TodoWorker.swift in Sources */,
+				2267AFFA2144F93600D8FED3 /* TodoPresenter.swift in Sources */,
 				2267AFC22144F7FD00D8FED3 /* AppDelegate.swift in Sources */,
+				2267AFFD2144F94C00D8FED3 /* Todo.swift in Sources */,
+				2267B0072145D96D00D8FED3 /* TodoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
